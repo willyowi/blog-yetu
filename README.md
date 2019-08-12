@@ -7,30 +7,18 @@ This is  an application that allows users to submit their one minute pitches and
  
 
 ## user stories
-* view pitches
+* some quotes
+* view blogs
 * login
-* pitch
+* blogs
 * downvote and upvote
-* view personal pitches on profile
-* comment on pitches
 
 ## BDD
 | Behavior           | Input                 | Outcome                            |
 | -------------------|-----------------------| -----------------------------------|
 | request page       | click horuku link url | view othr pitches  & vote          |
 | click on a pitch   |                       | vote/comment                       |
-| sign in/up         | details pass & user   | view,pitch & comment               |
-
-# Landing page
-Welcomes you to the page
-![screenshot](app/static/images/whatif.png)
-
-# loging in
-When you have an account you log in and when you dont you sign
-![screenshot](app/static/images/login.png)
-
-# on your timeline
-![screenshot](app/static/images/time.png)
+| sign in/up         | details pass & user   | view,pitch & comment              
 
 
 
@@ -43,7 +31,7 @@ When you have an account you log in and when you dont you sign
 ## Setup/Installation Requirements
 * Internet access
 * git clone
-* $ cd into Pitch_perfect
+* $ cd into blog-yetu
 * $ python3.6 -m venv virtual (install virtual environment)
 * $ source virtual/bin/activate
 * $ python3.6 -m pip install -r requirements.txt (install all dependencies)
