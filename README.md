@@ -1,9 +1,9 @@
-# BLOGPOST
+# BLOG-YETU
 
 ## Description
 #### This is a web application that allows users to express themselves using a blog posts. They they first create an account then log in to start creating blogs..
-#### By **gkarumba**
-##[Live Site](https://gkarumba-blogpost.herokuapp.com/)
+#### By **wilson owino**
+
 The user can:
 * See various blog posts
 * View blogposts they like
@@ -18,8 +18,8 @@ The user can:
 ### Cloning and running
 * Clone the application using git clone(this copies the app onto your device). In terminal:
 
-          $ git clone https://github.com/gkarumba/blogpost.git
-          $ cd blogpost
+          $ git clone https://github.com/willyowi/blog-yetu.git
+          $ cd blog-yetu
 
 * Creating the virtual environment
 
@@ -59,7 +59,7 @@ The user can:
 
 ## Support and contact details
 For any questions, troubleshooting or contributions,  find me on:
-* Email: gachegua@gmail.com
+* Email: wilsonowino1@gmail.com
 ### License
 MIT License
-Copyright (c) {2019} [gkarumba](https://github.com/gkarumba/BlogPost/blob/master/LICENSE)
+Copyright (c) {2019} [owino]
