@@ -4,7 +4,6 @@ from .. import db,photos
 from flask_login import login_required,current_user
 from ..models import User,Blog,Comment
 from .forms import BlogForm, UpdateProfile, ReviewForm
-import markdowwn2
 from ..request import get_quote
 from ..email import mail_message
 
@@ -35,14 +34,14 @@ def about():
 @main.route('/')
 def index():
 
-    name = "Blog"
-    quote=get_quote()
-    blogs= Blog.query.order_by(Blog.posted.desc()).all()
+    title = "Blog Post"
+    quote =get_quote()
+    blog = Blog.query.order_by(Blog.posted.desc()).all()
 
   
     # all_blogs = Blogs.get_all_blogs()
     
-    return render_template('index.html',name = name,quote = quote)
+    return render_template('index.html',title = title,quote = quote,   blog = blog)
 
     # return '<h1> Hello World </h1>'
 
