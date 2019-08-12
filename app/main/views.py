@@ -48,7 +48,7 @@ def index():
 def new_blog():    
   blogform = BlogForm()
 
-
+#validate
   if blogform.validate_on_submit():
 
         blog_title=blogform.title.data
