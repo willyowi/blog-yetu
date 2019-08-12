@@ -13,7 +13,7 @@ def about():
     if user is None:
         abort(404)
 
-    
+    #update
     form = UpdateProfile()
 
     if form.validate_on_submit():
