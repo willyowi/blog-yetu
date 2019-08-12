@@ -14,7 +14,7 @@ class User(UserMixin,db.Model):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer,primary_key = True)
-    username = db.Column(db.String(255),index = True)
+    username = db.Column(db.String(25),index = True)
     email = db.Column(db.String(255),unique = True,index = True)
     blog = db.relationship('Blog',backref = 'user',lazy = "dynamic")
     bio = db.Column(db.String(255))
