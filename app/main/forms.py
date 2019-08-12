@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import Required
 #post form
-class PostForm(FlaskForm):
+class BlogForm(FlaskForm):
     title = StringField('Post title',validators=[Required()])
     description = TextAreaField('About Post')
     submit = SubmitField('Submit')
