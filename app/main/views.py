@@ -37,6 +37,8 @@ def index():
 
     name = "Blog"
     quote=get_quote()
+    blogs= Blog.query.order_by(Blog.posted.desc()).all()
+
   
     # all_blogs = Blogs.get_all_blogs()
     
