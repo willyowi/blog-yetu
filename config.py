@@ -5,7 +5,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI='postgresql+psycopg2://moringa:sijuinigani@localhost/blogs'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/photos'
-    SECRET_KEY = '1234'
+    SECRET_KEY = 'owino'
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -14,7 +14,7 @@ class Config:
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
 
-    # simple mde  configurations
+    # simple mde  configuration
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
     
