@@ -3,8 +3,12 @@ from . import main
 from .. import db,photos
 from flask_login import login_required,current_user
 from ..models import User,Blog,Comment
-from .forms import UpdateProfile
+from .forms import PostForm, UpdateProfile, ReviewForm
+import markdowwn2
 from ..request import get_quote
+from ..email import mail_message
+
+
 #rout about
 @main.route('/about')
 def about():
