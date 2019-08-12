@@ -1,13 +1,28 @@
-from . import auth
-from .. import db
-from flask import render_template,redirect,url_for,flash,request
+from flask import render_template,redirect,url_for, flash,request
 from flask_login import login_user,logout_user,login_required
 from ..models import User
-from .forms import LoginForm,RegistrationForm
+from .forms import RegistrationForm,LoginForm
 from .. import db
+from . import auth
 from ..email import mail_message
 
-#rout login
+# @auth.route('/login')
+# def login():
+#     return render_template('auth/login.html')
+
+@auth.route('/register',methods = ["GET","POST"])
+def register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        user = User(email = form.email.data, username = form.username.data,password = form.password.data)
+        db.session.add(user)
+        db.session.commit()
+        
+        mail_message("Welcome to blogpost","email/welcome",user.email,user=user)
+        
+        return redirect(url_for('auth.login'))
+        title = "New Account"
+    return render_template('auth/register.html',registration_form = form)
 
 @auth.route('/login',methods=['GET','POST'])
 def login():
@@ -20,27 +35,11 @@ def login():
 
         flash('Invalid username or Password')
 
-    title = "Blog-Post login"
-    return render_template('auth/login.html',login_form = login_form,title = title)
+    title = "blogpost login"
+    return render_template('auth/login.html',login_form = login_form,title=title)
 
-#routing register
-@auth.route('/register',methods = ["GET","POST"])
-def register():
-    form = RegistrationForm()
-    if form.validate_on_submit():
-        user = User(email = form.email.data, username = form.username.data,password = form.password.data)
-        db.session.add(user)
-        db.session.commit()
-
-        # mail_message("Welcome to my blog!","email/welcome_user",user.email,user=user)
-
-
-        return redirect(url_for('auth.login'))
-        title = "New Account"
-    return render_template('auth/register.html',registration_form = form)  
-#routing logout
 @auth.route('/logout')
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for("main.index")) 
+    return redirect(url_for("main.index"))
