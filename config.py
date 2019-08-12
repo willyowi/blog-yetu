@@ -6,7 +6,7 @@ class Config:
     QUOTE_API_BASE_URL = 'http://quotes.stormconsultancy.co.uk/random.json'
     SECRET_KEY = os.environ.get('SECRET_KEY') 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggy'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggz'
     UPLOADS_DEFAULT_DEST ='app/static'
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
@@ -31,11 +31,11 @@ class ProdConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 class TestConfig(Config):
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggy'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggz'
     pass
     
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggy'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:sijuinigani@localhost/bloggz'
     DEBUG = True
 
 
