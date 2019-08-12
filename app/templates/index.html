@@ -8,16 +8,20 @@
 
     <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-6">
+                {{macro.displayBlogs(blogs)}}
+
 
         </div>
+        <div class="col-md-6">
+            <p>{{quote.quote}}</p>
+            <p>{{quote.author}}</p></div>
 
-        <p>{{quote.quote}}</p>
-        <p>{{quote.author}}</p>
         <div class="col-md-6" id="landing"
             style="margin-bottom:200px; margin-top: 200px; margin-left: 60px; font-size: 70px;font-weight: bold;">
         
-
-    
+        </div>
+    </div> 
+</div>  
 </body>
 {% endblock %}
