@@ -93,3 +93,11 @@ class Comment(db.Model):
         comment = Comment.query.filter_by(blog_id=id_blog,id=id).first()
 
         return comment        
+class Quote:
+    '''
+    Quote class to define Quote Objects
+    '''
+
+    def __init__(self, author, quote):
+        self.author = author
+        self.quote = quote
