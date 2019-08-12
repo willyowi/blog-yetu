@@ -23,7 +23,7 @@ def login():
     title = "Blog-Post login"
     return render_template('auth/login.html',login_form = login_form,title = title)
 
-
+#routing register
 @auth.route('/register',methods = ["GET","POST"])
 def register():
     form = RegistrationForm()
