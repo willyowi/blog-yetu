@@ -18,11 +18,11 @@
           <a href="{{url_for('main.update_profile',uname=user.username)}}">Edit profile</a>
         {% endif %}
     
-        <!--Displaying user bio-->
+        <!--Displaying user's bio-->
         {% if user.bio %}
           <p> {{user.bio}}</p>
         {%else%}
-          <p> {{user.username| capitalize}} has no bio </p>
+          <p> {{user.username| capitalize}} has no bio info </p>
         {% endif %}
       </div>
     
