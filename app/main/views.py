@@ -41,7 +41,7 @@ def index():
     # return '<h1> Hello World </h1>'
 
 
-
+#route new blog
 @main.route('/new_blog', methods = ['GET','POST'])
 @login_required
 
