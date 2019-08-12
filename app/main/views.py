@@ -5,7 +5,7 @@ from flask_login import login_required,current_user
 from ..models import User,Blog,Comment
 from .forms import UpdateProfile
 from ..request import get_quote
-
+#rout about
 @main.route('/about')
 def about():
     user = User.query.filter_by(username = uname).first()
