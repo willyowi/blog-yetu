@@ -1,4 +1,4 @@
-# Pitch Perfect
+# BLOG-YETU
 
 ## Description
 This is  an application that allows users to submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them.
@@ -16,9 +16,9 @@ This is  an application that allows users to submit their one minute pitches and
 ## BDD
 | Behavior           | Input                 | Outcome                            |
 | -------------------|-----------------------| -----------------------------------|
-| request page       | click horuku link url | view othr pitches  & vote          |
-| click on a pitch   |                       | vote/comment                       |
-| sign in/up         | details pass & user   | view,pitch & comment              
+| request page       | click horuku link url | view other blogs  & vote          |
+| click on a blog   |                       | vote/comment                       |
+| sign in/up         | details pass & user   | view,blog & comment              
 
 
 
