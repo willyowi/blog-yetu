@@ -1,7 +1,13 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import Required
-#updtae profile
+#post form
+class PostForm(FlaskForm):
+    title = StringField('Post title',validators=[Required()])
+    description = TextAreaField('About Post')
+    submit = SubmitField('Submit')
+#update
+
 class UpdateProfile(FlaskForm):
     bio = TextAreaField('Tell us about you.',validators = [Required()])
     submit = SubmitField('Submit')
