@@ -1,14 +1,14 @@
-## Boss Babe Blog!
+##Blog-Yetu!
 
 ## Description
 
 This is a personal blog website where I create and share my opinions and other users can read and comment on them.
  
-## Created By: Sonia Wangui Habamba
+## Created By: Wilson Owino
 
 ## Date
 
-6th July 2019
+10th Aug 2019
 
 ## BDD
 
@@ -23,9 +23,6 @@ Delete comment |	click delete comment |	comments are deleted
  
 ## Set-Up
 
-### clone this repository
-
-``` $ git clone  https://github.com/Soniawangui/Blog-Post. ```
 
 ##Technologoies Used
 
@@ -34,9 +31,9 @@ Flask<br/>
 
 ## Support and contact details
 
-If you run into any problem please inform me at @koisonia99@gmail.com.
+If you run into any problem please inform me at wilsonowino1@gmail.com.
 
 ### License MIT (https://choosealicense.com/licenses/mit/)
 
-Copyright (c) {2019} **Sonia Habamba**
+Copyright (c) {2019} **wilson**
   
