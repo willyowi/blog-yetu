@@ -46,8 +46,17 @@ The user can:
 ## Technologies Used
 * Python 3.6
 * Flask
-## Behaviour driven development/ Specifications
 
+## landing page :book:
+![screenshot](app/static/photos/landland.png)
+
+## Signin 
+![screenshot](app/static/photos/sign.png)
+
+## register
+![screenshot](app/static/photos/reg.png)
+
+# BBD
 | Behaviour |  Sample Input | Sample Output |
 | :---------------- | :---------------: | :------------------ |
 | Display latest blogs | On page load | List of various blogs I have written |
@@ -56,17 +65,6 @@ The user can:
 | Edit posts(writer) | Submit edit post | The post is updated with new data from user |
 | Delete posts(writer) | Click delete post | Post is deleted |
 | Delete comments(writer) | Click delete comment | Comment is deleted |
-
-
-# landing page :book:
-![screenshot](app/static/photos/landland.png)
-
-# Signin 
-![screenshot](app/static/photos/sign.png)
-
-# register
-![screenshot](app/static/photos/reg.png)
-
 
 ## Support and contact details
 For any questions, troubleshooting or contributions,  find me on:
