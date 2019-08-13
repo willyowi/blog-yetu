@@ -62,10 +62,10 @@ The user can:
 ![screenshot](app/static/photos/landland.png)
 
 # Signin 
-![screenshot](app/static/photos/.png)
+![screenshot](app/static/photos/sign.png)
 
 # register
-![screenshot](app/static/photos/.png)
+![screenshot](app/static/photos/reg.png)
 
 
 ## Support and contact details
