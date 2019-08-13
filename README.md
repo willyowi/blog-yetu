@@ -1,8 +1,8 @@
-# BLOG-YETU
+# BLOG-YETU :muscle:
 
 ## Description
 #### This is a web application that allows users to express themselves using a blog posts. They they first create an account then log in to start creating blogs..
-#### By **wilson owino**
+#### By **wilson owino** :100:
 
 The user can:
 * See various blog posts
@@ -56,6 +56,17 @@ The user can:
 | Edit posts(writer) | Submit edit post | The post is updated with new data from user |
 | Delete posts(writer) | Click delete post | Post is deleted |
 | Delete comments(writer) | Click delete comment | Comment is deleted |
+
+
+# landing page :book:
+![screenshot](app/static/photos/landland.png)
+
+# Signin 
+![screenshot](app/static/photos/.png)
+
+# register
+![screenshot](app/static/photos/.png)
+
 
 ## Support and contact details
 For any questions, troubleshooting or contributions,  find me on:
